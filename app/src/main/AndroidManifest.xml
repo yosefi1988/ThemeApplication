@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.sajjadyosefi.android.themeapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivityStatusBarUtilLibrary" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:theme="@style/AppThemeStatusbar"
+            android:name=".MainActivityStatusbar" >
+        </activity>
+
+        <activity
+            android:name=".MainActivityTransparent"
+            android:theme="@style/AppTheme.TransparentActivityTheme">
+        </activity>
+
+        <activity
+            android:name=".MainActivityFullScreen"
+            android:theme="@style/AppTheme.MainActivityTheme">
+        </activity>
+
+        <activity
+            android:name=".MainActivityTranslucent"
+            android:theme="@style/AppTransparentTheme">
+        </activity>
+
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
